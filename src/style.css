@@ -60,4 +60,65 @@ a {
 
 main {
   flex-grow: 1;
+  max-width: 100%;
+}
+
+.tintas {
+  display: block;
+  margin: auto;
+}
+
+img,
+img.card.tintas {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+nav {
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 0.75rem 0.5rem;
+  }
+
+  header h1 {
+    font-size: 1.25rem;
+    margin: 0;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.5rem;
+  }
+
+  nav a {
+    display: block;
+    padding: 0.4rem 0.6rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  .card {
+    padding: 0.75rem;
+    border-radius: 6px;
+  }
+
+  .produtos,
+  .lojas {
+    grid-template-columns: 1fr;
+  }
+
+  main {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
 }
