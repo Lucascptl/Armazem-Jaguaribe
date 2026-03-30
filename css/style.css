@@ -77,11 +77,7 @@ img { display: block; max-width: 100%; height: auto; }
   text-align: center;
   margin-bottom: 2.5rem;
 }
-.blocked-btn {
-  pointer-events: none;
-  opacity: 0.6; /* opcional: aparência de desativado */
-  cursor: not-allowed;
-}
+/* .blocked-btn removed */
 /* ============================
    SITE HEADER
 ============================ */
