@@ -1,76 +1,266 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tintas</title>
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-    />
-    <link rel="stylesheet" href="/style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tintas — Armazém Jaguaribe</title>
+  <meta name="description" content="Sistema tintométrico, tintas imobiliárias, esmaltes, vernizes e impermeabilizantes Vedacit no Armazém Jaguaribe." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;900&family=Barlow:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="../css/tintas.css" />
 </head>
+
 <body>
-    <header>
-      <h1>Armazém Jaguaribe</h1>
-      <p>
-        Materiais de Campo, Piscina, Elétrica, Tintas e Conexões Hidráulicas
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <img src="../imagens/logo_armazem.jpeg" alt="Logo Armazém Jaguaribe" class="brand-icon" />
+        <div>
+          <span class="brand-name">Armazém Jaguaribe</span>
+          <p class="brand-tagline">Materiais de Campo · Piscina · Elétrica · Tintas · Hidráulica</p>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="../index.html">Início</a>
+        <a href="../index.html#produtos">Produtos</a>
+        <a href="../index.html#lojas">Nossas Lojas</a>
+        <a href="../index.html#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO DA PÁGINA -->
+  <section class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-content">
+      <a href="../index.html#produtos" class="breadcrumb-link">
+        <i class="bi bi-arrow-left"></i> Voltar para Produtos
+      </a>
+      <div class="hero-badge">Categoria</div>
+      <h1 class="hero-title">Tintas &amp; <span class="accent">Acabamentos</span></h1>
+      <p class="hero-sub">
+        Sistema tintométrico moderno, linha completa de tintas imobiliárias, esmaltes, vernizes e impermeabilizantes.
+        A cor e a proteção que seu projeto merece.
       </p>
-    </header>
+      <a href="../index.html#contato" class="cta-primary">
+        <i class="bi bi-whatsapp"></i> Fale Conosco
+      </a>
+    </div>
+    <div class="page-hero-palette">
+      <span style="background:#c724e8"></span>
+      <span style="background:#a01bc4"></span>
+      <span style="background:#7c13a0"></span>
+      <span style="background:#5a0080"></span>
+      <span style="background:#f5c800"></span>
+    </div>
+  </section>
 
-    <nav>
-      <a href="/index.html">Início</a>
-      <a href="/pages/materiaisDeCampo.html">Materiais de Campo</a>
-      <a href="/pages/conexoesHidraulicas.html">Conexões Hidráulicas</a>
-      <a href="/pages/eletrica.html">Elétrica</a>
-      <a href="/pages/piscina.html">Piscina</a>
-    </nav>
+  <main>
 
-    <main>
-        <section>
-                <h2>🎨 Tintas: Variedade, Cores e Proteção para sua Obra</h2>
-        <p>
-            A seção de Tintas do Armazém Jaguaribe é o lugar ideal para dar vida nova aos seus projetos. 
-            Oferecemos uma linha completa de produtos para pintura e acabamento, garantindo qualidade, durabilidade e o tom perfeito para qualquer ambiente.
-        </p>
-        <img src="/imagens/parede com tintas 2.jpeg" class="card tintas" alt="Sistema Tintométrico para criação de cores">
+    <!-- DESTAQUE: SISTEMA TINTOMÉTRICO -->
+    <section class="section-destaque">
+      <div class="destaque-inner">
+        <div class="destaque-img-wrap">
+          <img src="../imagens/parede com tintas 2.jpeg" alt="Parede com aplicação de tintas coloridas" />
+          <div class="destaque-badge">
+            <i class="bi bi-palette-fill"></i>
+            <span>2000+ Cores</span>
+          </div>
+        </div>
+        <div class="destaque-text">
+          <div class="section-badge">Diferencial Exclusivo</div>
+          <h2 class="section-title">Sistema <span class="accent">Tintométrico</span></h2>
+          <p>
+            Nossa loja conta com um <strong>Sistema Tintométrico Coral</strong> de última geração, que permite a criação
+            de milhares de cores sob medida, na hora. Chega de procurar a cor certa!
+          </p>
+          <p>
+            Trazemos a tonalidade exata que você imaginou — com fidelidade total e acabamento impecável. Nossos
+            especialistas auxiliam na escolha ideal para cada ambiente e tipo de superfície.
+          </p>
+          <ul class="feature-list">
+            <li><i class="bi bi-check2-circle"></i><span><strong>Mais de 2.000 cores</strong> disponíveis para criação</span></li>
+            <li><i class="bi bi-check2-circle"></i><span><strong>Correspondência de cor</strong> para combinar com referencias existentes</span></li>
+            <li><i class="bi bi-check2-circle"></i><span><strong>Atendimento especializado</strong> para projeto e reforma</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-        <h3>Personalização de Cores com o Sistema Tintométrico</h3>
-        <p>
-            Nossa loja conta com um <strong>Sistema Tintométrico</strong> moderno, que permite a criação de milhares de cores sob medida. 
-            Chega de procurar! Trazemos a cor exata que você imaginou, garantindo fidelidade e precisão para sua decoração ou projeto arquitetônico. Venha escolher a cor perfeita com a ajuda dos nossos especialistas.
-        </p>
-        <img src="/imagens/sistema%20tintometrico.jpeg" class="card tintas" alt="Sistema Tintométrico para criação de cores">
+    <!-- LINHA DE PRODUTOS -->
+    <section class="section-produtos">
+      <div class="section-header">
+        <h2 class="section-title dark">Linha Completa de <span class="accent-dark">Produtos</span></h2>
+        <p class="section-sub">Trabalhamos com as melhores marcas do mercado</p>
+      </div>
 
-        <h3>Linha Completa de Acabamentos</h3>
-        <p>
-            Trabalhamos com marcas líderes do mercado, oferecendo:
-        </p>
-        <ul>
-          <li><strong>Tintas Imobiliárias:</strong> Linhas Premium e Econômica para paredes internas e externas, em diversos acabamentos (fosco, semi-brilho, acetinado).</li>
-          <li><strong>Vernizes e Seladores:</strong> Proteção e acabamento para madeiras e metais.</li>
-          <li><strong>Esmaltes:</strong> Alta durabilidade para portas, janelas e estruturas metálicas.</li>
-          <li><strong>Massas:</strong> Massa Corrida e Massa Acrílica para preparação de superfícies.</li>
-        </ul>
+      <div class="produtos-grid">
 
-        <h3>Impermeabilizantes e Produtos Especiais (Vedacit)</h3>
-        <p>
-            Além da cor, a proteção é fundamental. Somos distribuidores de produtos especializados da <strong>Vedacit</strong>, oferecendo soluções em impermeabilização e aditivos para concreto. Encontre aqui mantas líquidas, aditivos para argamassas e outros itens essenciais para garantir que sua obra esteja protegida contra a umidade e infiltrações.
-        </p>
-        <img src="/imagens/baldes de vedacit.jpeg" class="card tintas" alt="Sistema Tintométrico para criação de cores">
+        <!-- Card: Tintas Imobiliárias -->
+        <div class="prod-card">
+          <div class="prod-card-icon" style="background: linear-gradient(135deg, #5a0080, #c724e8)">
+            <i class="bi bi-house-fill"></i>
+          </div>
+          <div class="prod-card-body">
+            <h3>Tintas Imobiliárias</h3>
+            <p>Linhas Premium e Econômica para paredes internas e externas, em diversos acabamentos.</p>
+            <ul class="prod-tags">
+              <li>Fosco</li>
+              <li>Semi-brilho</li>
+              <li>Acetinado</li>
+              <li>Lavável</li>
+            </ul>
+          </div>
+        </div>
 
-        </section>
-    </main>
+        <!-- Card: Esmaltes -->
+        <div class="prod-card">
+          <div class="prod-card-icon" style="background: linear-gradient(135deg, #3a006a, #9b18d8)">
+            <i class="bi bi-door-closed-fill"></i>
+          </div>
+          <div class="prod-card-body">
+            <h3>Esmaltes</h3>
+            <p>Alta durabilidade para portas, janelas, estruturas metálicas e móveis.</p>
+            <ul class="prod-tags">
+              <li>Sintético</li>
+              <li>Acrílico</li>
+              <li>Brilhante</li>
+              <li>Acetinado</li>
+            </ul>
+          </div>
+        </div>
 
-    <footer>
-      <p>&copy; 2025 Armazém Jaguaribe - Todos os direitos reservados.</p>
-    </footer>
+        <!-- Card: Vernizes e Seladores -->
+        <div class="prod-card">
+          <div class="prod-card-icon" style="background: linear-gradient(135deg, #7a4a00, #d4820a)">
+            <i class="bi bi-tree-fill"></i>
+          </div>
+          <div class="prod-card-body">
+            <h3>Vernizes &amp; Seladores</h3>
+            <p>Proteção e acabamento para madeiras e metais, realçando a beleza natural do material.</p>
+            <ul class="prod-tags">
+              <li>Maritite</li>
+              <li>Imbuia</li>
+              <li>Transparente</li>
+              <li>Selador</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Card: Massas -->
+        <div class="prod-card">
+          <div class="prod-card-icon" style="background: linear-gradient(135deg, #0a4a6a, #1a8cdb)">
+            <i class="bi bi-layers-fill"></i>
+          </div>
+          <div class="prod-card-body">
+            <h3>Massas de Acabamento</h3>
+            <p>Preparação perfeita da superfície para garantir aderência e resultado profissional.</p>
+            <ul class="prod-tags">
+              <li>Massa Corrida</li>
+              <li>Massa Acrílica</li>
+              <li>Textura</li>
+              <li>Grafiato</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SISTEMA TINTOMÉTRICO: IMAGEM -->
+    <section class="section-img-destaque">
+      <div class="img-destaque-inner">
+        <div class="img-destaque-text">
+          <div class="section-badge-light">Tecnologia</div>
+          <h2 class="section-title">Veja o Sistema <span class="accent">em Ação</span></h2>
+          <p>
+            Nosso sistema tintométrico Coral produz a coloração exata com mistura automatizada de pigmentos.
+            Traga sua referência — código, foto ou amostra — e saímos com a cor perfeita.
+          </p>
+          <div class="img-destaque-stats">
+            <div class="id-stat">
+              <span class="id-num">2000+</span>
+              <span class="id-label">Cores disponíveis</span>
+            </div>
+            <div class="id-divider"></div>
+            <div class="id-stat">
+              <span class="id-num">Coral</span>
+              <span class="id-label">Marca parceira</span>
+            </div>
+          </div>
+        </div>
+        <div class="img-destaque-img-wrap">
+          <img src="../imagens/sistema tintometrico.jpeg" alt="Sistema tintométrico Coral em uso" />
+        </div>
+      </div>
+    </section>
+
+    <!-- VEDACIT: IMPERMEABILIZANTES -->
+    <section class="section-vedacit">
+      <div class="vedacit-inner">
+        <div class="vedacit-img-wrap">
+          <img src="../imagens/baldes de vedacit.jpeg" alt="Baldes de produtos Vedacit impermeabilizantes" />
+        </div>
+        <div class="vedacit-text">
+          <div class="section-badge-light">Parceiro Oficial</div>
+          <h2 class="section-title">Impermeabilizantes <span class="accent">Vedacit</span></h2>
+          <p>
+            Além da cor, a proteção estrutural é fundamental. Somos distribuidores dos produtos especializados da
+            <strong>Vedacit</strong>, referência nacional em impermeabilização e aditivos para concreto.
+          </p>
+          <div class="feature-list-dark">
+            <div class="fld-item">
+              <i class="bi bi-check2-circle"></i>
+              <span><strong>Mantas Líquidas:</strong> Piscinas, banheiros, lajes e terraços.</span>
+            </div>
+            <div class="fld-item">
+              <i class="bi bi-check2-circle"></i>
+              <span><strong>Aditivos para Argamassa:</strong> Maior aderência e resistência.</span>
+            </div>
+            <div class="fld-item">
+              <i class="bi bi-check2-circle"></i>
+              <span><strong>Impermeabilizante de Cimento:</strong> Proteção cristalina permanente.</span>
+            </div>
+            <div class="fld-item">
+              <i class="bi bi-check2-circle"></i>
+              <span><strong>Vedacalha e Vedatop:</strong> Soluções pontuais rápidas e eficazes.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA CONTATO -->
+    <section class="section-cta">
+      <div class="cta-inner">
+        <div class="cta-text">
+          <h2 class="section-title">Pronto para escolher <span class="accent">sua cor?</span></h2>
+          <p>Venha nos visitar ou fale com nossos especialistas pelo WhatsApp.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="https://wa.me/558192853891" target="_blank" class="cta-wpp">
+            <i class="bi bi-whatsapp"></i> WhatsApp
+          </a>
+          <a href="../index.html#lojas" class="cta-outline">
+            <i class="bi bi-geo-alt-fill"></i> Nossas Lojas
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>&copy; 2025 Armazém Jaguaribe — Todos os direitos reservados.</p>
+  </footer>
+
 </body>
 </html>
