@@ -21,13 +21,34 @@
   <!-- HERO -->
   <section class="hero">
     <div class="hero-bg"></div>
-    <div class="hero-content">
-      <div class="hero-badge">Tudo para sua obra</div>
-      <h2 class="hero-title">Do campo à<br /><span class="accent">construção</span>,<br />a gente tem.</h2>
-      <p class="hero-sub">Três lojas. Décadas de experiência. O material que você precisa, quando você precisa.</p>
-      <div class="hero-ctas">
-        <a href="#produtos" class="cta-primary">Ver Produtos</a>
-        <a href="#lojas" class="cta-secondary">Nossas Lojas</a>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">Tudo para sua obra</div>
+        <h2 class="hero-title">Do campo à<br /><span class="accent">construção</span>,<br />a gente tem.</h2>
+        <p class="hero-sub">Três lojas. Décadas de experiência. O material que você precisa, quando você precisa.</p>
+        <div class="hero-ctas">
+          <a href="#produtos" class="cta-primary">Ver Produtos</a>
+          <a href="#lojas" class="cta-secondary">Nossas Lojas</a>
+        </div>
+      </div>
+
+      <!-- MURAL SQUARE: Rodízio (3D Carousel) -->
+      <div class="hero-mural">
+        <div class="mural-container" id="muralContainer">
+          <div class="mural-card active" data-index="0">
+            <img src="imagens/WhatsApp Image 2026-03-26 at 15.01.54.jpeg" alt="Tintas e Acabamentos" />
+          </div>
+          <div class="mural-card next" data-index="1">
+            <img src="imagens/vedacit e cloro latao.jpeg" alt="Ferramentas de Qualidade" />
+          </div>
+          <div class="mural-card prev" data-index="2">
+            <img src="imagens/vedacit.jpeg" alt="Manutenção de Piscina" />
+          </div>
+        </div>
+        <div class="mural-nav">
+          <button class="mural-btn btn-left" id="muralLeft"><i class="bi bi-chevron-left"></i></button>
+          <button class="mural-btn btn-right" id="muralRight"><i class="bi bi-chevron-right"></i></button>
+        </div>
       </div>
     </div>
     <div class="hero-stats">
@@ -351,7 +372,7 @@
           <div class="pf-item"><i class="bi bi-check2-circle"></i><span><strong>Cabos e Fios:</strong> Fios flexíveis,
               rígidos e cabos de diversas bitolas.</span></div>
           <div class="pf-item"><i class="bi bi-check2-circle"></i><span><strong>Proteção:</strong> Disjuntores, DRs
-               e quadros de distribuição.</span></div>
+              e quadros de distribuição.</span></div>
           <div class="pf-item"><i class="bi bi-check2-circle"></i><span><strong>Tomadas e Interruptores:</strong> Linha
               completa de acabamentos e espelhos.</span></div>
           <div class="pf-item"><i class="bi bi-check2-circle"></i><span><strong>Iluminação:</strong> Lâmpadas LED,
@@ -408,7 +429,8 @@
         <p class="popup-intro">Linha completa de tubulações, conexões e registros para instalações hidráulicas de
           qualquer porte.</p>
         <div class="popup-features">
-          <div class="pf-item"><i class="bi bi-check2-circle"></i><span><strong>Tubos:</strong> PVC, Rígido, Soldável e Esgoto,
+          <div class="pf-item"><i class="bi bi-check2-circle"></i><span><strong>Tubos:</strong> PVC, Rígido, Soldável e
+              Esgoto,
               em diversas bitolas.</span></div>
           <div class="pf-item"><i class="bi bi-check2-circle"></i><span><strong>Conexões:</strong> Joelhos, tês,
               reduções, uniões e adaptadores.</span></div>

@@ -185,4 +185,57 @@ document.addEventListener('DOMContentLoaded', () => {
   `;
   document.head.appendChild(style);
 
+  /* -----------------------------------------------
+     6. MURAL HERO — 3D Carousel
+  ----------------------------------------------- */
+  const cardsMural = document.querySelectorAll('.mural-card');
+  const btnLeft    = document.getElementById('muralLeft');
+  const btnRight   = document.getElementById('muralRight');
+  let muralIndex   = 0;
+
+  function updateMural() {
+    if (cardsMural.length === 0) return;
+    
+    cardsMural.forEach((card, i) => {
+      card.classList.remove('active', 'next', 'prev');
+      
+      if (i === muralIndex) {
+        card.classList.add('active');
+        card.style.zIndex = '10';
+      } else if (i === (muralIndex + 1) % cardsMural.length) {
+        card.classList.add('next');
+        card.style.zIndex = '5';
+      } else {
+        card.classList.add('prev');
+        card.style.zIndex = '5';
+      }
+    });
+  }
+
+  btnLeft?.addEventListener('click', () => {
+    muralIndex = (muralIndex - 1 + cardsMural.length) % cardsMural.length;
+    updateMural();
+  });
+
+  btnRight?.addEventListener('click', () => {
+    muralIndex = (muralIndex + 1) % cardsMural.length;
+    updateMural();
+  });
+
+  // Auto-rotação a cada 5 segundos
+  let muralInterval = setInterval(() => {
+    muralIndex = (muralIndex + 1) % cardsMural.length;
+    updateMural();
+  }, 5000);
+
+  // Pausa ao passar o mouse
+  const muralHero = document.querySelector('.hero-mural');
+  muralHero?.addEventListener('mouseenter', () => clearInterval(muralInterval));
+  muralHero?.addEventListener('mouseleave', () => {
+    muralInterval = setInterval(() => {
+      muralIndex = (muralIndex + 1) % cardsMural.length;
+      updateMural();
+    }, 5000);
+  });
+
 });
