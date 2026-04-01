@@ -38,7 +38,7 @@ body {
   color: var(--dark);
   overflow-x: hidden;
 }
-/* Link da logo */
+
 .brand {
   display: flex;
   align-items: center;
