@@ -619,7 +619,13 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s ease;
+  background: #000;
+}
+
+.img-destaque-img-wrap video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .img-destaque-img-wrap:hover img {
