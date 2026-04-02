@@ -1418,3 +1418,13 @@ img {
     justify-content: center;
   }
 }
+
+@media (max-width: 768px) {
+  .qn-num {
+    font-size: 1.6rem;
+  }
+
+  .qn-desc {
+    font-size: 0.9rem;
+  }
+}
