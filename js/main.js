@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, observerOpts);
 
-  document.querySelectorAll('.produto-card, .loja-card, .qn-item, .wpp-card, .prod-card').forEach((el, i) => {
+  document.querySelectorAll('.produto-card, .loja-card, .qn-item, .wpp-card, .prod-card, .small-prod-card').forEach((el, i) => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
     el.style.transition = `opacity 0.5s ease ${i * 0.07}s, transform 0.5s ease ${i * 0.07}s`;
@@ -178,7 +178,8 @@ document.addEventListener('DOMContentLoaded', () => {
     .loja-card.visible,
     .qn-item.visible,
     .wpp-card.visible,
-    .prod-card.visible {
+    .prod-card.visible,
+    .small-prod-card.visible {
       opacity: 1 !important;
       transform: translateY(0) !important;
     }

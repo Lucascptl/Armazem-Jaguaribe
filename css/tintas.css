@@ -788,7 +788,77 @@ img {
 }
 
 /* ============================
-   FOOTER
+   GRID DE PRODUTOS PEQUENOS
+============================ */
+.section-produtos-pequenos {
+  padding: 5rem 2rem;
+  background: var(--white);
+}
+
+.section-header-small {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.grid-produtos-pequenos-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.5rem;
+}
+
+.small-prod-card {
+  background: var(--off-white);
+  border: 1px solid var(--gray-light);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  text-align: center;
+  transition: all var(--transition);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.small-prod-card:hover {
+  background: var(--white);
+  border-color: var(--purple-light);
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.small-prod-img {
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  background: var(--gray-light);
+}
+
+.small-prod-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition);
+}
+
+.small-prod-card:hover .small-prod-img img {
+  transform: scale(1.1);
+}
+
+.small-prod-name {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--blue-deep);
+  line-height: 1.2;
+}
+
+/* ============================
+   FOOTER (Replaced context starts here)
 ============================ */
 .site-footer {
   background: #010040;
@@ -820,6 +890,9 @@ img {
   .produtos-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .grid-produtos-pequenos-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
@@ -842,6 +915,10 @@ img {
 
   .produtos-grid {
     grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .grid-produtos-pequenos-container {
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
   }
 
@@ -872,6 +949,9 @@ img {
   .produtos-grid {
     grid-template-columns: 1fr;
   }
+  .grid-produtos-pequenos-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   .page-hero {
     padding: 3.5rem 1.25rem 3rem;
@@ -879,6 +959,7 @@ img {
 
   .section-destaque,
   .section-produtos,
+  .section-produtos-pequenos,
   .section-img-destaque,
   .section-vedacit,
   .section-cta {
